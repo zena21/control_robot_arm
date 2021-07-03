@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <style>
+        .button {
+            background-color: #4e4caf; /* blue */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }        
+        </style>
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+   </head>
+    <body>
+        <h2> <p style="color:rgb(0, 17, 255);"> Robot Arm control panel </p></h2>
+        <form name="formArm" method="post" action="first.php">     
+<div>
+    <span id="v1"></span>
+    <input type="range" id="motor1" name="volume1" min="0" max="180">
+    <label for="volume1">Motor1</label>
+    
+</div>
+<br><br>
+<div>
+
+    <span id="v2"></span>
+    <input type="range" id="motor2" name="volume2" min="0" max="180">
+    <label for="volume2"> Motor2</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v3"></span>
+    <input type="range" id="motor3" name="volume3" min="0" max="180">
+    <label for="volume3">Motor3</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v4"></span>
+    <input type="range" id="motor4" name="volume4" min="0" max="180">
+    <label for="volume4">Motor4</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v5"></span>
+    <input type="range" id="motor5" name="volume5" min="0" max="180">
+    <label for="volume5">Motor5</label>
+    
+</div>
+<br><br>
+<div>
+    <span id="v6"></span>
+    <input type="range" id="motor6" name="volume6" min="0" max="180">
+    <label for="volume6">Motor6</label>
+    
+</div>
+<br>
+<input type="submit"  class="button" name="save" id="submit" value="save">
+</form>
+<br>
+<form name="formArm" method="post" action="first.php">
+<input type="submit"   class="button" name="run" id="Run" value="run">
+</form>
+
+<script>
+    var slider1 = document.getElementById("motor1");
+var output1 = document.getElementById("v1");
+output1.innerHTML = slider1.value;
+
+slider1.oninput = function() {
+  output1.innerHTML = this.value;
+}
+var slider2 = document.getElementById("motor2");
+var output2 = document.getElementById("v2");
+output2.innerHTML = slider2.value;
+
+slider2.oninput = function() {
+  output2.innerHTML = this.value;
+}
+
+var slider3 = document.getElementById("motor3");
+var output3 = document.getElementById("v3");
+output3.innerHTML = slider3.value;
+
+slider3.oninput = function() {
+  output3.innerHTML = this.value;
+}
+
+
+var slider4 = document.getElementById("motor4");
+var output4 = document.getElementById("v4");
+output4.innerHTML = slider4.value;
+
+slider4.oninput = function() {
+  output4.innerHTML = this.value;
+}
+var slider5 = document.getElementById("motor5");
+var output5 = document.getElementById("v5");
+output5.innerHTML = slider5.value;
+
+slider5.oninput = function() {
+  output5.innerHTML = this.value;
+}
+var slider6 = document.getElementById("motor6");
+var output6 = document.getElementById("v6");
+output6.innerHTML = slider6.value;
+
+slider6.oninput = function() {
+  output6.innerHTML = this.value;
+}
+
+</script>
+    </body>
+</html>
